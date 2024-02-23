@@ -3,6 +3,7 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import nodemailer from "nodemailer";
 import crypto from "crypto";
+import dotenv from "dotenv"
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -18,8 +19,8 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'crimereports3@gmail.com',
-        pass: 'utci avoe peun ftgi'
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
     }
 });
 
