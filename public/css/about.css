@@ -1,0 +1,21 @@
+.split-background {
+    display: flex;
+    position: relative;
+}
+.split-background .left,
+.split-background .right {
+    flex: 1;
+    height: 100vh;
+}
+.split-background .left {
+    background-color: #131137;;
+}
+.split-background .right {
+    background-color: #b91c1c;
+}
+.about-us-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

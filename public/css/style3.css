@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #141414;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #18ffff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #18ffff;
+    border-radius: 5px;
+    background-color: #141414;
+    color: #18ffff;
+}
+
+.btn {
+    width: 80px;
+    padding: 10px;
+    background-color: #18ffff;
+    border: none;
+    border-radius: 5px;
+    color: #141414;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4dd0e1;
+}
+
+.complaint-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #18ffff;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+}
+
+.no-complaints {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: red;
+    font-style: italic;
+}

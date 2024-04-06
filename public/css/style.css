@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Oswald, 'Source Sans Pro';
+  overflow: auto;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+*::selection {
+  color: white;
+  background: black;
+}
+
+.section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Section2bgTransparent.png);
+  background-size: cover;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  height: 974px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px 0px;
+  border-radius: 24px;
+  padding: 20px;
+  width: 513px;
+  height: 358px;
+  background-color: white;
+}
+
+.card h4 {
+  font-size: 30px;
+  text-align: center;
+  padding: 13px;
+}
+
+ .card p {
+  text-align: justify;
+  font-size: 22px;
+  padding: 38px;
+}
+
+.card button {
+  cursor: pointer;
+  border-radius: 21px;
+  border: transparent;
+  color: white;
+  background: black;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 9px;
+  /* height: 35px;
+  width: 170px; */
+}
+
+.card button:hover {
+  background-color: rgb(46, 46, 46);
+}
+
+.statsection{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Stat.jpeg); /* Keep the same background image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 974px;
+  /* opacity: 0.7; */
+}
+
+.suspsection{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/suspicious.jpeg); /* Keep the same background image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 974px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .navbar {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+
+}
+
+.main .navbar h1 {
+  min-width: 50%;
+}
+
+.main .navbar .mssg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  width: 40%;
+  height: 100%;
+  font-size: 35px;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.main .body1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90%;
+  height: 561px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.main .body3 {
+  background: url("/images/Thief.jpeg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .body3 span {
+  height: 100%;
+  width: 12.5%;
+  background: rgba(128, 128, 128, 0.533);
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.main .body1 .part1 {
+  line-height: 1.7;
+  width: 55%;
+  height: 100%;
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  flex-direction: column;
+}
+
+.main .body1 .part1 h1 {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  line-height: 60px;
+  width: 497px;
+}
+
+.main .body1 .part1 p {
+  width: 395px;
+}
+
+.main .body1 .part1 button {
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: transparent;
+  color: white;
+  background: black;
+  font-size: 19px;
+  font-weight: 600;
+  height: 40px;
+  width: 120px;
+}
+
+.main .body1 .part1 button:hover {
+  background-color: rgb(46, 46, 46);
+}
+
+.main .body1 .part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 35%; */
+  width: 23%;
+  height: 100%;
+
+}
+
+.main .body1 .part2 img {
+  width: 108%;
+}
+
+.main .body2 {
+  height: 529px;
+  display: flex;
+  justify-content: flex-end;
+  background: url(/images/Handimage.png);
+  background-size: cover;
+
+  /* min-width: 90%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+  background: url('/images/Handimage.png');
+  background-size: cover; */
+}
+
+.main .body2 .part {
+  line-height: 34px;
+  color: rgb(244, 235, 235);
+  font-size: 22px;
+  padding: 99px;
+  width: 52%;
+  height: 100%;
+}
+
+.main .body2 .part a {
+  text-decoration: none;
+  color: rgb(244, 235, 235);
+}
+
+.main .body2 .part a:hover {
+  color: black;
+}
+
+.main footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  height: 60px;
+  background: rgb(45, 44, 44);
+  color: white;
+}
+
+.main footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.main footer a:hover {
+  color: gray;
+}
+.main footer ul {
+  display: flex;
+  list-style: none;
+}
+
+.main footer ul li {
+  padding: 5px;
+}
+
+.main .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  height: 40px;
+  color: white;
+  background: rgb(0, 0, 0);
+}
+
+@media (max-width:600px) {
+
+  .main .navbar {
+    font-size: 10px;
+    height: 40px;
+  }
+
+  .main .navbar .mssg {
+    font-size: 15px;
+  }
+
+  .main .body1 {
+    height: 210px;
+  }
+
+  .main .body2 {
+    height: 135px;
+  }
+
+  .main .body3 {
+    height: 470px;
+  }
+
+  .main .body1 .part1 {
+    padding: 10px;
+  }
+
+  .main .body1 .part1 p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .main .body1 .part1 button {
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .main .body2 .part {
+    padding: 10px;
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  .main footer {
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .main .box {
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+
+.section2-child,
+.section2-inner,
+.section2-item {
+  position: absolute;
+  height: 100%;
+  width: 11.02%;
+  top: 0;
+  bottom: 0;
+}
+
+.section2-child {
+  right: 88.98%;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(180deg, rgba(14, 14, 17, 0.01), #000);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.16) inset;
+  backdrop-filter: blur(100px);
+}
+
+.section2-inner,
+.section2-item {
+  right: 79.41%;
+  left: 9.57%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.section2-inner {
+  right: 69.42%;
+  left: 19.56%;
+}
+
+.rectangle-icon,
+.section2-child1,
+.section2-child2,
+.section2-child3,
+.section2-child4,
+.section2-child5,
+.section2-child6 {
+  position: absolute;
+  height: 100%;
+  width: 11.02%;
+  top: 0;
+  right: 59.5%;
+  bottom: 0;
+  left: 29.48%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.section2-child1,
+.section2-child2,
+.section2-child3,
+.section2-child4,
+.section2-child5,
+.section2-child6 {
+  right: 49.86%;
+  left: 39.12%;
+}
+
+.section2-child2,
+.section2-child3,
+.section2-child4,
+.section2-child5,
+.section2-child6 {
+  right: 39.94%;
+  left: 49.04%;
+}
+
+.section2-child3,
+.section2-child4,
+.section2-child5,
+.section2-child6 {
+  right: 29.89%;
+  left: 59.09%;
+}
+
+.section2-child4,
+.section2-child5,
+.section2-child6 {
+  right: 19.97%;
+  left: 69.01%;
+}
+
+.section2-child5,
+.section2-child6 {
+  right: 9.92%;
+  left: 79.06%;
+}
+
+.section2-child6 {
+  right: 0;
+  left: 88.98%;
+}
+
+.section2 {
+  position: absolute;
+  top: 3763px;
+  left: 4px;
+  width: 3488px;
+  height: 2595px;
+}

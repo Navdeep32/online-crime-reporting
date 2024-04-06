@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Status Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container max-w-lg mx-auto mt-20 p-6 rounded-lg shadow-lg bg-gray-800">
+        <h1 class="title text-3xl text-center mb-8">Cybercrime Complaints Portal</h1>
+        <div class="complaint-form flex mb-4">
+            <input type="text" id="complaintID" class="form-control flex-1 mr-2 px-4 py-2 rounded-l-md" placeholder="Enter Complaint ID" aria-label="Complaint ID" aria-describedby="trackButton">
+            <button class="btn px-4 py-2 bg-blue-600 rounded-r-md" type="button" id="trackButton">Track</button>
+        </div>
+        <div class="progress-bar h-6 mb-4 bg-gray-600 rounded-full overflow-hidden">
+            <div id="progressBar" class="progress-bar-inner h-full transition-all ease-in-out duration-300 bg-blue-600 w-0"></div>
+        </div>
+        <div id="statusText" class="status-text text-center font-bold"></div>
+    </div>
+
+    <script src="/js/script_status.js"></script>
+</body>
+</html>

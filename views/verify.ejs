@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/verify_style.css">
+    <title>Verify</title>
+</head>
+
+<body class="roboto-regular">
+    <div class="container">
+        <h1>Verify your email!</h1>
+        <p>Please enter the 4-digit verification code sent on your email ID</p>
+        <form id="otpForm" action="/verify" method="post">
+            <h4>Verification code:</h4>
+            <div class="otp-container">
+                <input type="hidden" name="email" value="<%= email %>">
+                <input type="hidden" name="userId" value="<%= userId %>">
+                <input class="otp" type="text" maxlength="1" name="otp1" required>
+                <input class="otp" type="text" maxlength="1" name="otp2" required>
+                <input class="otp" type="text" maxlength="1" name="otp3" required>
+                <input class="otp" type="text" maxlength="1" name="otp4" required>
+                <input class="otp" type="text" maxlength="1" name="otp5" required>
+                <input class="otp" type="text" maxlength="1" name="otp6" required>
+            </div>
+            <button type="submit">VERIFY & PROCEED</button>
+        </form>
+        <script src="/js/verifyScript.js"></script>
+    </div>
+</body>
+
+</html>
